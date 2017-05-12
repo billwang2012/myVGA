@@ -1,0 +1,480 @@
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim myVGA.ngd myVGA_translate.v 
+netgen -intstyle ise -s 2  -pcf myVGA.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim myVGA_map.ncd myVGA_map.v 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+netgen -intstyle ise -s 2  -pcf myVGA.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim myVGA.ncd myVGA_timesim.v 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA_cs.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA_cs.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA_cs.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA_cs.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+netgen -intstyle ise -s 2  -pcf myVGA.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim myVGA.ncd myVGA_timesim.v 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+netgen -intstyle ise -s 2  -pcf myVGA.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim myVGA.ncd myVGA_timesim.v 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+xst -intstyle ise -ifn "C:/Users/bill/FPGA/myVGA/myVGA.xst" -ofn "C:/Users/bill/FPGA/myVGA/myVGA.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc myVGA.ucf -p xc6slx9-ftg256-2 myVGA.ngc myVGA.ngd  
+map -intstyle ise -p xc6slx9-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o myVGA_map.ncd myVGA.ngd myVGA.pcf 
+par -w -intstyle ise -ol high -mt off myVGA_map.ncd myVGA.ncd myVGA.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf 
+bitgen -intstyle ise -f myVGA.ut myVGA.ncd 

@@ -1,0 +1,151 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design myVGA.ngc ...
+WARNING:NetListWriters:298 - No output is written to myVGA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus GND_1_o_GND_1_o_mux_51_OUT<5 : 0> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file myVGA.edif ...
+ngc2edif: Total memory usage is 81332 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design myVGA.ngc ...
+WARNING:NetListWriters:298 - No output is written to myVGA.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus vga_color1<15 : 0> on block myVGA is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GND_1_o_GND_1_o_sub_43_OUT<4 : 2> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GND_1_o_vcnt[11]_mux_36_OUT<15 : 0> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus GND_1_o_GND_1_o_sub_44_OUT<12 : 0> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus Msub_GND_1_o_GND_1_o_sub_44_OUT_lut<12 :
+   3> on block myVGA is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_33_OUT_Madd_lut<31 : 20> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_33_OUT_Madd_cy<30 : 20> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_33_OUT_Madd_lut<25 : 22> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_35_OUT_Madd_lut<31 : 19> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_35_OUT_Madd_lut<31 : 20> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_37_OUT_Madd_lut<31 : 18> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_37_OUT_Madd_lut<31 : 19> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_39_OUT_Madd_lut<31 : 17> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_39_OUT_Madd_lut<31 : 18> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_41_OUT_Madd_lut<31 : 16> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_41_OUT_Madd_lut<31 : 17> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_43_OUT_Madd_lut<31 : 15> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_43_OUT_Madd_lut<31 : 16> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_45_OUT_Madd_lut<31 : 14> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_45_OUT_Madd_lut<31 : 15> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_47_OUT_Madd_lut<31 : 13> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_47_OUT_Madd_lut<31 : 14> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_49_OUT_Madd_lut<31 : 12> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_49_OUT_Madd_lut<31 : 13> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_51_OUT_Madd_lut<31 : 11> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_51_OUT_Madd_lut<31 : 12> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_53_OUT_Madd_lut<31 : 10> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_53_OUT_Madd_lut<31 : 11> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_55_OUT_Madd_lut<31 : 9> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_55_OUT_Madd_lut<31 : 10> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_57_OUT_Madd_lut<31 : 8> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_57_OUT_Madd_lut<31 : 9> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_59_OUT_Madd_lut<31 : 7> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_59_OUT_Madd_lut<31 : 8> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_61_OUT_Madd_lut<31 : 6> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_61_OUT_Madd_lut<31 : 7> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_63_OUT_Madd_lut<31 : 5> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_48/Madd_a[31]_GND_3_o_add_63_OUT_Madd_lut<31 : 6> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_65_OUT_Madd_Madd_cy<6 : 2> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   GND_1_o_PWR_1_o_mod_44/Madd_a[31]_GND_3_o_add_65_OUT_Madd_Madd_lut<8 : 3> on
+   block myVGA is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file myVGA.edif ...
+ngc2edif: Total memory usage is 87412 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design myROM.ngc ...
+WARNING:NetListWriters:298 - No output is written to myROM.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file myROM.edif ...
+ngc2edif: Total memory usage is 83380 kilobytes
+

@@ -1,0 +1,28 @@
+Command line:
+   myVGA_test_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58448
+
+Thu Apr 27 15:10:04 2017
+
+
+ Elaboration Time: 0.405602 sec
+
+ Current Memory Usage: 679.305 Meg
+
+ Total Signals          : 2923
+ Total Nets             : 2121
+ Total Signal Drivers   : 2109
+ Total Blocks           : 441
+ Total Primitive Blocks : 282
+ Total Processes        : 2628
+ Total Traceable Variables  : 1443
+ Total Scalar Nets and Variables : 40501
+
+ Total Simulation Time: 53.3211 sec
+
+ Current Memory Usage: 695.886 Meg
+
+Thu Apr 27 15:20:27 2017
+

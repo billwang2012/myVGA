@@ -1,0 +1,10 @@
+Command line:
+   myVGA_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51378
+
+Tue Apr 11 17:12:01 2017
+
+
+ Elaboration Time: 2.90162 sec

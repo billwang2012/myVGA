@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/myPLL.v"
+verilog work "myDISP.v"
+verilog work "ipcore_dir/myROM.v"
+verilog work "myVGA.v"

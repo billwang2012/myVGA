@@ -1,0 +1,2 @@
+verilog work "netgen/map/myVGA_map.v"
+verilog work "myVGA_test.v"

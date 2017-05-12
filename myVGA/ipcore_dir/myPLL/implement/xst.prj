@@ -1,0 +1,2 @@
+verilog work ../../myPLL.v
+verilog work ../example_design/myPLL_exdes.v

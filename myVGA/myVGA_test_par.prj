@@ -1,0 +1,2 @@
+verilog work "netgen/par/myVGA_timesim.v"
+verilog work "myVGA_test.v"

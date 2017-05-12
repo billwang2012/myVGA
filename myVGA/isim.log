@@ -1,0 +1,27 @@
+ISim log file
+Running: C:\Users\bill\FPGA\myVGA\myVGA_test_isim_par.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/bill/FPGA/myVGA/myVGA_test_isim_par.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/myvga_timesim.sdf, for root module /myVGA_test/uut/.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/myvga_timesim.sdf, for root module /myVGA_test/uut/.
+Finished circuit initialization process.
+# run all
+Stopped at time : 2000500 ns :  in File "C:/Users/bill/FPGA/myVGA/myVGA_test.v" Line 72 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/myvga_timesim.sdf, for root module /myVGA_test/uut/.
+Finished circuit initialization process.
+# run all
+Stopped at time : 2663250 ns : File "C:/Users/bill/FPGA/myVGA/myVGA_test.v" Line 78

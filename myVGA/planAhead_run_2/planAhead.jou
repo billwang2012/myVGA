@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Apr 19 14:59:47 2017
+# Process ID: 9848
+# Log file: C:/Users/bill/FPGA/myVGA/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/bill/FPGA/myVGA/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/bill/FPGA/myVGA/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

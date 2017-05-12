@@ -1,0 +1,38 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/bill/FPGA/myVGA/myVGA_test_isim_par.exe" -prj "C:/Users/bill/FPGA/myVGA/myVGA_test_par.prj" "work.myVGA_test" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/bill/FPGA/myVGA/netgen/par/myVGA_timesim.v" into library work
+Analyzing Verilog file "C:/Users/bill/FPGA/myVGA/myVGA_test.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module X_CKBUF
+Compiling module X_BUFIO2_default
+Compiling module X_BUF
+Compiling module x_dcm_sp_clock_divide_by_2
+Compiling module x_dcm_sp_maximum_period_check(cl...
+Compiling module x_dcm_sp_maximum_period_check(cl...
+Compiling module x_dcm_sp_clock_lost
+Compiling module X_DCM_SP(CLKFX_DIVIDE=5,CLKIN_PE...
+Compiling module X_LUT6(INIT=64'b1100110011001100...
+Compiling module X_LUT5
+Compiling module X_ZERO
+Compiling module X_CARRY4
+Compiling module X_OPAD
+Compiling module X_OBUF
+Compiling module X_IPAD
+Compiling module X_INV(LOC="PAD159")
+Compiling module X_BUFIO2FB
+Compiling module ffsrce
+Compiling module X_FF
+Compiling module X_ONE
+Compiling module myVGA
+Compiling module myVGA_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 156 Verilog Units
+Built simulation executable C:/Users/bill/FPGA/myVGA/myVGA_test_isim_par.exe
+Fuse Memory Usage: 37020 KB
+Fuse CPU Usage: 3088 ms

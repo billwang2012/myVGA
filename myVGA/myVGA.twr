@@ -1,0 +1,638 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml myVGA.twx myVGA.ncd -o myVGA.twr myVGA.pcf -ucf myVGA.ucf
+
+Design file:              myVGA.ncd
+Physical constraint file: myVGA.pcf
+Device,package,speed:     xc6slx9,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   8.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: PLL_PCLK/dcm_sp_inst/CLKIN
+  Logical resource: PLL_PCLK/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: PLL_PCLK/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 12.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 4.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: PLL_PCLK/dcm_sp_inst/CLKIN
+  Logical resource: PLL_PCLK/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: PLL_PCLK/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 16.000ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 4.000ns (250.000MHz) (Tdcmper_CLKIN)
+  Physical resource: PLL_PCLK/dcm_sp_inst/CLKIN
+  Logical resource: PLL_PCLK/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y1.CLKIN
+  Clock network: PLL_PCLK/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_PLL_PCLK_clkfx = PERIOD TIMEGRP "PLL_PCLK_clkfx" 
+TS_sys_clk_pin * 0.8 HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2308104 paths analyzed, 687 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  14.508ns.
+--------------------------------------------------------------------------------
+
+Paths for end point myDISP_inst/vga_color1_5 (SLICE_X9Y14.CE), 96 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.377ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_5 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.778ns (Levels of Logic = 5)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X11Y14.A5      net (fanout=4)        0.771   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X11Y14.A       Tilo                  0.259   myDISP_inst/GND_2_o_GND_2_o_equal_16_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_16_o<11>11
+    SLICE_X11Y14.C2      net (fanout=3)        0.543   myDISP_inst/GND_2_o_GND_2_o_equal_16_o<11>1
+    SLICE_X11Y14.C       Tilo                  0.259   myDISP_inst/GND_2_o_GND_2_o_equal_16_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_20_o<11>1
+    SLICE_X10Y14.CX      net (fanout=4)        0.261   myDISP_inst/GND_2_o_GND_2_o_equal_20_o
+    SLICE_X10Y14.CMUX    Tcxc                  0.192   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv4
+    SLICE_X10Y14.B6      net (fanout=1)        0.167   myDISP_inst/_n0212_inv4
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.390   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.778ns (2.000ns logic, 3.778ns route)
+                                                       (34.6% logic, 65.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.492ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_5 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.663ns (Levels of Logic = 4)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X6Y14.C1       net (fanout=4)        0.549   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X6Y14.C        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_15_o<11>
+    SLICE_X10Y14.A3      net (fanout=5)        0.897   myDISP_inst/GND_2_o_GND_2_o_equal_15_o
+    SLICE_X10Y14.A       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv3
+    SLICE_X10Y14.B4      net (fanout=1)        0.421   myDISP_inst/_n0212_inv3
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.390   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.663ns (1.760ns logic, 3.903ns route)
+                                                       (31.1% logic, 68.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.531ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_5 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.624ns (Levels of Logic = 4)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X10Y15.B6      net (fanout=4)        0.697   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X10Y15.B       Tilo                  0.235   myDISP_inst/GND_2_o_GND_2_o_equal_17_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>21
+    SLICE_X10Y15.A5      net (fanout=2)        0.203   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>2
+    SLICE_X10Y15.A       Tilo                  0.235   myDISP_inst/GND_2_o_GND_2_o_equal_17_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>2
+    SLICE_X10Y14.B2      net (fanout=5)        0.928   myDISP_inst/GND_2_o_GND_2_o_equal_13_o
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.390   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_5
+    -------------------------------------------------  ---------------------------
+    Total                                      5.624ns (1.760ns logic, 3.864ns route)
+                                                       (31.3% logic, 68.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point myDISP_inst/vga_color1_10 (SLICE_X9Y14.CE), 96 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.385ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_10 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.770ns (Levels of Logic = 5)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X11Y14.A5      net (fanout=4)        0.771   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X11Y14.A       Tilo                  0.259   myDISP_inst/GND_2_o_GND_2_o_equal_16_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_16_o<11>11
+    SLICE_X11Y14.C2      net (fanout=3)        0.543   myDISP_inst/GND_2_o_GND_2_o_equal_16_o<11>1
+    SLICE_X11Y14.C       Tilo                  0.259   myDISP_inst/GND_2_o_GND_2_o_equal_16_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_20_o<11>1
+    SLICE_X10Y14.CX      net (fanout=4)        0.261   myDISP_inst/GND_2_o_GND_2_o_equal_20_o
+    SLICE_X10Y14.CMUX    Tcxc                  0.192   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv4
+    SLICE_X10Y14.B6      net (fanout=1)        0.167   myDISP_inst/_n0212_inv4
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.382   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.770ns (1.992ns logic, 3.778ns route)
+                                                       (34.5% logic, 65.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.500ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_10 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.655ns (Levels of Logic = 4)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X6Y14.C1       net (fanout=4)        0.549   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X6Y14.C        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_15_o<11>
+    SLICE_X10Y14.A3      net (fanout=5)        0.897   myDISP_inst/GND_2_o_GND_2_o_equal_15_o
+    SLICE_X10Y14.A       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv3
+    SLICE_X10Y14.B4      net (fanout=1)        0.421   myDISP_inst/_n0212_inv3
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.382   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.655ns (1.752ns logic, 3.903ns route)
+                                                       (31.0% logic, 69.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.539ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_10 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.616ns (Levels of Logic = 4)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X10Y15.B6      net (fanout=4)        0.697   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X10Y15.B       Tilo                  0.235   myDISP_inst/GND_2_o_GND_2_o_equal_17_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>21
+    SLICE_X10Y15.A5      net (fanout=2)        0.203   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>2
+    SLICE_X10Y15.A       Tilo                  0.235   myDISP_inst/GND_2_o_GND_2_o_equal_17_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>2
+    SLICE_X10Y14.B2      net (fanout=5)        0.928   myDISP_inst/GND_2_o_GND_2_o_equal_13_o
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.382   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_10
+    -------------------------------------------------  ---------------------------
+    Total                                      5.616ns (1.752ns logic, 3.864ns route)
+                                                       (31.2% logic, 68.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point myDISP_inst/vga_color1_0 (SLICE_X9Y14.CE), 96 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.402ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_0 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.753ns (Levels of Logic = 5)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X11Y14.A5      net (fanout=4)        0.771   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X11Y14.A       Tilo                  0.259   myDISP_inst/GND_2_o_GND_2_o_equal_16_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_16_o<11>11
+    SLICE_X11Y14.C2      net (fanout=3)        0.543   myDISP_inst/GND_2_o_GND_2_o_equal_16_o<11>1
+    SLICE_X11Y14.C       Tilo                  0.259   myDISP_inst/GND_2_o_GND_2_o_equal_16_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_20_o<11>1
+    SLICE_X10Y14.CX      net (fanout=4)        0.261   myDISP_inst/GND_2_o_GND_2_o_equal_20_o
+    SLICE_X10Y14.CMUX    Tcxc                  0.192   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv4
+    SLICE_X10Y14.B6      net (fanout=1)        0.167   myDISP_inst/_n0212_inv4
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.365   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.753ns (1.975ns logic, 3.778ns route)
+                                                       (34.3% logic, 65.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.517ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_0 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.638ns (Levels of Logic = 4)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X6Y14.C1       net (fanout=4)        0.549   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X6Y14.C        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_15_o<11>
+    SLICE_X10Y14.A3      net (fanout=5)        0.897   myDISP_inst/GND_2_o_GND_2_o_equal_15_o
+    SLICE_X10Y14.A       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv3
+    SLICE_X10Y14.B4      net (fanout=1)        0.421   myDISP_inst/_n0212_inv3
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.365   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.638ns (1.735ns logic, 3.903ns route)
+                                                       (30.8% logic, 69.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.556ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               myDISP_inst/hcnt_10 (FF)
+  Destination:          myDISP_inst/vga_color1_0 (FF)
+  Requirement:          12.500ns
+  Data Path Delay:      5.599ns (Levels of Logic = 4)
+  Clock Path Skew:      0.040ns (0.691 - 0.651)
+  Source Clock:         clk2 rising at 0.000ns
+  Destination Clock:    clk2 falling at 12.500ns
+  Clock Uncertainty:    0.385ns
+
+  Clock Uncertainty:          0.385ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.700ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: myDISP_inst/hcnt_10 to myDISP_inst/vga_color1_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y19.CQ       Tcko                  0.430   myDISP_inst/hcnt<10>
+                                                       myDISP_inst/hcnt_10
+    SLICE_X6Y14.A2       net (fanout=11)       1.434   myDISP_inst/hcnt<10>
+    SLICE_X6Y14.A        Tilo                  0.235   N6
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>11
+    SLICE_X10Y15.B6      net (fanout=4)        0.697   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>1
+    SLICE_X10Y15.B       Tilo                  0.235   myDISP_inst/GND_2_o_GND_2_o_equal_17_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>21
+    SLICE_X10Y15.A5      net (fanout=2)        0.203   myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>2
+    SLICE_X10Y15.A       Tilo                  0.235   myDISP_inst/GND_2_o_GND_2_o_equal_17_o
+                                                       myDISP_inst/GND_2_o_GND_2_o_equal_13_o<11>2
+    SLICE_X10Y14.B2      net (fanout=5)        0.928   myDISP_inst/GND_2_o_GND_2_o_equal_13_o
+    SLICE_X10Y14.B       Tilo                  0.235   myDISP_inst/_n0212_inv
+                                                       myDISP_inst/_n0212_inv5
+    SLICE_X9Y14.CE       net (fanout=2)        0.602   myDISP_inst/_n0212_inv
+    SLICE_X9Y14.CLK      Tceck                 0.365   myDISP_inst/vga_color1<10>
+                                                       myDISP_inst/vga_color1_0
+    -------------------------------------------------  ---------------------------
+    Total                                      5.599ns (1.735ns logic, 3.864ns route)
+                                                       (31.0% logic, 69.0% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_PLL_PCLK_clkfx = PERIOD TIMEGRP "PLL_PCLK_clkfx" TS_sys_clk_pin * 0.8 HIGH
+        50%;
+--------------------------------------------------------------------------------
+
+Paths for end point IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAMB16_X0Y10.ADDRA0), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.457ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               myDISP_inst/rom_addr_0 (FF)
+  Destination:          IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.468ns (Levels of Logic = 0)
+  Clock Path Skew:      0.011ns (0.112 - 0.101)
+  Source Clock:         clk2 rising at 25.000ns
+  Destination Clock:    clk2 rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: myDISP_inst/rom_addr_0 to IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y21.AQ       Tcko                  0.198   myDISP_inst/rom_addr<1>
+                                                       myDISP_inst/rom_addr_0
+    RAMB16_X0Y10.ADDRA0  net (fanout=31)       0.336   myDISP_inst/rom_addr<0>
+    RAMB16_X0Y10.CLKA    Trckc_ADDRA (-Th)     0.066   IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+                                                       IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[24].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.468ns (0.132ns logic, 0.336ns route)
+                                                       (28.2% logic, 71.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAMB16_X0Y8.ADDRA0), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.504ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               myDISP_inst/rom_addr_0 (FF)
+  Destination:          IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.522ns (Levels of Logic = 0)
+  Clock Path Skew:      0.018ns (0.119 - 0.101)
+  Source Clock:         clk2 rising at 25.000ns
+  Destination Clock:    clk2 rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: myDISP_inst/rom_addr_0 to IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X7Y21.AQ       Tcko                  0.198   myDISP_inst/rom_addr<1>
+                                                       myDISP_inst/rom_addr_0
+    RAMB16_X0Y8.ADDRA0   net (fanout=31)       0.390   myDISP_inst/rom_addr<0>
+    RAMB16_X0Y8.CLKA     Trckc_ADDRA (-Th)     0.066   IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+                                                       IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.522ns (0.132ns logic, 0.390ns route)
+                                                       (25.3% logic, 74.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point myDISP_inst/vga_color2_2 (SLICE_X12Y21.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.537ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_3 (FF)
+  Destination:          myDISP_inst/vga_color2_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.537ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk2 rising at 25.000ns
+  Destination Clock:    clk2 rising at 25.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_3 to myDISP_inst/vga_color2_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X13Y20.DQ      Tcko                  0.198   IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<3>
+                                                       IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_3
+    SLICE_X12Y21.C6      net (fanout=5)        0.142   IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<3>
+    SLICE_X12Y21.CLK     Tah         (-Th)    -0.197   myDISP_inst/vga_color2<3>
+                                                       myDISP_inst/GND_2_o_rom_data[3]_mux_82_OUT<8>1
+                                                       myDISP_inst/vga_color2_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.537ns (0.395ns logic, 0.142ns route)
+                                                       (73.6% logic, 26.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_PLL_PCLK_clkfx = PERIOD TIMEGRP "PLL_PCLK_clkfx" TS_sys_clk_pin * 0.8 HIGH
+        50%;
+--------------------------------------------------------------------------------
+Slack: 21.430ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram/CLKA
+  Logical resource: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram/CLKA
+  Location pin: RAMB16_X0Y22.CLKA
+  Clock network: clk2
+--------------------------------------------------------------------------------
+Slack: 21.430ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram/CLKA
+  Logical resource: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram/CLKA
+  Location pin: RAMB16_X0Y8.CLKA
+  Clock network: clk2
+--------------------------------------------------------------------------------
+Slack: 21.430ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram/CLKA
+  Logical resource: IMG_ROM/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram/CLKA
+  Location pin: RAMB16_X1Y26.CLKA
+  Clock network: clk2
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     20.000ns|      8.000ns|     11.606ns|            0|            0|            0|      2308104|
+| TS_PLL_PCLK_clkfx             |     25.000ns|     14.508ns|          N/A|            0|            0|      2308104|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_50m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50m        |   14.508|         |    6.123|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2308104 paths, 0 nets, and 1760 connections
+
+Design statistics:
+   Minimum period:  14.508ns{1}   (Maximum frequency:  68.927MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Apr 28 14:35:54 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 221 MB
+
+
+
